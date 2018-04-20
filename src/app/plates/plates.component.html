@@ -1,1 +1,21 @@
-plates!
+<h3>Plate {{expt_id}}{{plate_num}}</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th *ngFor="let col of plate_cols">
+        {{ col }}
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr class='plate-row' *ngFor="let row of plate_rows">
+      <th scope="row">{{ row }}</th>
+      <td class='well' *ngFor='let col of plate_cols' droppable [id]="row + col" (onDrop)="onItemDrop($event)">{{row}}{{col}}
+      </td>
+    </tr>
+  </tbody>
+
+</table>
