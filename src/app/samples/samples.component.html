@@ -1,0 +1,42 @@
+
+<div fxLayout = "row">
+
+
+<div fxFlexOffset="50%" fxFlex>
+  <h3>Available samples</h3>
+
+  <button mat-raised-button>Upload sample list</button>
+
+  <button mat-raised-button [color]="all_fill" (click)="onSelectAll($event)">
+    <ng-container *ngIf="all_selected; else select">Deselect</ng-container>
+     all samples</button>
+     <ng-template #select>Select</ng-template>
+
+
+  <div>
+    <ul class="list-group">
+      <button mat-button color="accent" draggable *ngFor="let sample of samples" [dragData]="sample" class="list-group-item">{{sample}}</button>
+    </ul>
+  </div>
+</div>
+
+  <!-- <div fxFlexOffset="50%" fxFlex> -->
+    <div class="panel panel-default" droppable (onDrop)="onItemDrop($event)">
+      <h3>Selected samples</h3>
+      <div class="panel-body">
+        <button mat-button *ngFor="let item of selectedSamples" draggable color="primary" [dragData]="item" class="selected">{{item}}</button>
+      </div>
+    </div>
+
+
+    <button mat-raised-button (click)="onClearAll($event)">Clear all</button>
+    <div class="panel panel-default" droppable (onDrop)="onItemDelete($event)">
+    <button mat-raised-button color="warn">Delete sample</button>
+  </div>
+  <!-- </div> -->
+</div>
+
+<div>
+
+
+</div>
