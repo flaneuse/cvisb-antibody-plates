@@ -13,6 +13,7 @@ import { ReplicatesComponent } from './replicates/replicates.component';
 import { ControlsComponent } from './controls/controls.component';
 import { PlatesComponent } from './plates/plates.component';
 
+import 'hammerjs';
 
 @NgModule({
   declarations: [

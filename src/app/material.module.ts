@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 
 
 import {
-  MatButtonModule
-  // MatAutocompleteModule, MatFormFieldModule, MatInputModule,
+  MatButtonModule, MatFormFieldModule, MatInputModule, MatCheckboxModule,
+  MatSliderModule
+  // MatAutocompleteModule,
   // MatChipsModule, MatTabsModule, MatTableModule, MatSelectModule,
-  // MatCheckboxModule, MatIconModule, MatSortModule,
+  // , MatIconModule, MatSortModule,
   // MatSnackBarModule, MatPaginatorModule, MatExpansionModule,
   // MatDatepickerModule, MatNativeDateModule, MatDividerModule,
   // MatCardModule, MatTooltipModule
@@ -14,7 +15,8 @@ import {
 
 @NgModule({
   imports: [
-    MatButtonModule
+    MatButtonModule, MatFormFieldModule, MatInputModule, MatCheckboxModule,
+    MatSliderModule
       // MatAutocompleteModule, MatFormFieldModule, MatInputModule,
       // MatChipsModule, MatTabsModule, MatTableModule, MatSelectModule,
       // MatCheckboxModule, MatIconModule, MatSortModule,
@@ -23,7 +25,8 @@ import {
       // MatCardModule, MatTooltipModule
   ],
   exports: [
-    MatButtonModule
+    MatButtonModule, MatFormFieldModule, MatInputModule, MatCheckboxModule,
+    MatSliderModule
     // MatAutocompleteModule, MatFormFieldModule, MatInputModule,
     // MatChipsModule, MatTabsModule, MatTableModule, MatSelectModule,
     // MatCheckboxModule, MatIconModule, MatSortModule,

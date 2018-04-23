@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReplicatesComponent implements OnInit {
 
+  private num_repl: number = 3;
+  private replicates: number[] = [1,2,3];
+
   constructor() { }
 
   ngOnInit() {
