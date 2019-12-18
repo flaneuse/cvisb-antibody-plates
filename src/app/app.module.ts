@@ -5,6 +5,7 @@ import { NgDragDropModule } from 'ng-drag-drop';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { MaterialModule } from './material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { SamplesComponent } from './samples/samples.component';
@@ -27,6 +28,7 @@ import 'hammerjs';
   imports: [
     BrowserModule,
     MaterialModule,
+      BrowserAnimationsModule,
     FlexLayoutModule,
     NgDragDropModule.forRoot()
   ],
